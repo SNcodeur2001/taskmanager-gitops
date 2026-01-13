@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Applicaiton 
+metadata: 
+  name: taskmanager-backend-app
+  namespace: argocd
+spec: 
+  project: default
+  source: 
+    repoURL:  https://github.com/<TON_USER>/taskmanager-gitops.git
